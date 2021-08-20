@@ -2,12 +2,12 @@ import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
-        --orange: #FA5F00;
+        --orange: #F29F05;
         --blue: #0D07DE;
-        --green: #32FA00;
+        --green: #04D976;
         --yellow: #F5F000;
-        --skyblue: #00E0DF;
         --hotpink: #F20574;
+        --purple: #BD36BF;
     }
 
     * {
@@ -45,7 +45,7 @@ export const Container = styled.div`
    width: 90%;
    max-width: 700px;
    h1 {
-      margin: 20px 0;
+      margin: 40px 0 20px;
       font-size: 1.5em;
       color: #333;
       + p {
@@ -113,7 +113,15 @@ export const DoubleButtonArea = styled.div`
 export const GameOverContainer = styled.div`
    width: 100%;
    text-align: center;
+   p {
+      margin: 30px 0;
+   }
    strong {
+      color: var(--green);
       font-size: 3em;
+   }
+   > button {
+      position: absolute;
+      bottom: 20px;
    }
 `;

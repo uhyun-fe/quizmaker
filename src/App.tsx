@@ -175,7 +175,7 @@ const App = () => {
                         clickEvent={readyToStart}
                         width="100%"
                         height="60px"
-                        color="#FA5F00"
+                        color="var(--orange)"
                         is_font_black={false}
                         font_size="1.5em"
                      />
@@ -245,8 +245,7 @@ const App = () => {
                      <p>
                         <strong>{score}</strong> / {questions.length}
                      </p>
-                     <DoubleButtonArea>
-                        <GameButton
+                     {/* <GameButton
                            text="문제보기"
                            clickEvent={() => alert("구현중입니다.")}
                            width="49%"
@@ -254,17 +253,16 @@ const App = () => {
                            color="var(--skyblue)"
                            is_font_black={false}
                            font_size="1.5em"
-                        />
-                        <GameButton
-                           text="RESTART"
-                           clickEvent={reStart}
-                           width="49%"
-                           height="60px"
-                           color="var(--orange)"
-                           is_font_black={false}
-                           font_size="1.5em"
-                        />
-                     </DoubleButtonArea>
+                        /> */}
+                     <GameButton
+                        text="RESTART"
+                        clickEvent={reStart}
+                        width="100%"
+                        height="60px"
+                        color="var(--orange)"
+                        is_font_black={false}
+                        font_size="1.5em"
+                     />
                   </GameOverContainer>
                )}
             </Container>

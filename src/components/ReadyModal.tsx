@@ -14,7 +14,7 @@ const ReadyModal: React.FC<Props> = ({ remaining_time, cancel }) => {
       <Wrapper>
          <Modal>
             <p>{remaining_time}초 뒤에 게임이 시작됩니다.</p>
-            <GameButton text="CANCEL" clickEvent={cancel} width="50%" height="50px" color="#0D07DE" is_font_black={false} font_size="1.5em" />
+            <GameButton text="CANCEL" clickEvent={cancel} width="50%" height="50px" color="var(--purple)" is_font_black={false} font_size="1.5em" />
          </Modal>
       </Wrapper>
    );
