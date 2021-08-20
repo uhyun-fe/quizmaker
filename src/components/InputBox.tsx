@@ -19,7 +19,7 @@ const InputBox: React.FC<Props> = ({ number, question, setQuestion, deleteQuesti
          <GameButton
             text="삭제"
             clickEvent={() => deleteQuestion(number)}
-            width="15%"
+            width="20%"
             height="50px"
             color="#e2e2e2"
             is_font_black={true}
